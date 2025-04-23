@@ -6,7 +6,7 @@ import pytz
 import os
 
 # Constants
-local_tz = pytz.timezone("India/New Delhi")
+local_tz = pytz.timezone("Asia/Kolkata")
 
 # Load environment variables
 load_dotenv()
