@@ -10,14 +10,9 @@ def get_icon_for_record(activity_name):
         "5K": "👟",
         "10K": "⭐",
         "Longest Run": "🏃",
-        "Longest Ride": "🚴",
-        "Total Ascent": "🚵",
-        "Max Avg Power (20 min)": "🔋",
         "Most Steps in a Day": "👣",
         "Most Steps in a Week": "🚶",
         "Most Steps in a Month": "📅",
-        "Longest Goal Streak": "✔️",
-        "Other": "🏅"
     }
     return icon_map.get(activity_name, "🏅")  # Default to "Other" icon if not found
 
@@ -28,12 +23,9 @@ def get_cover_for_record(activity_name):
         "5K": "https://images.unsplash.com/photo-1571008887538-b36bb32f4571?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800",
         "10K": "https://images.unsplash.com/photo-1529339944280-1a37d3d6fa8c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800",
         "Longest Run": "https://images.unsplash.com/photo-1532383282788-19b341e3c422?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800",
-        "Longest Ride": "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800",
-        "Max Avg Power (20 min)": "https://images.unsplash.com/photo-1591741535018-d042766c62eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzkyMXwwfDF8c2VhcmNofDJ8fHNwaW5uaW5nfGVufDB8fHx8MTcyNjM1Mzc0Mnww&ixlib=rb-4.0.3&q=80&w=4800",
         "Most Steps in a Day": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800",
         "Most Steps in a Week": "https://images.unsplash.com/photo-1602174865963-9159ed37e8f1?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800",
         "Most Steps in a Month": "https://images.unsplash.com/photo-1580058572462-98e2c0e0e2f0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800",
-        "Longest Goal Streak": "https://images.unsplash.com/photo-1477332552946-cfb384aeaf1c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800"
     }
     return cover_map.get(activity_name, "https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800") 
 
@@ -146,13 +138,9 @@ def replace_activity_name_by_typeId(typeId):
         3: "5K",
         4: "10K",
         7: "Longest Run",
-        8: "Longest Ride",
-        9: "Total Ascent",
-        10: "Max Avg Power (20 min)",
         12: "Most Steps in a Day",
         13: "Most Steps in a Week",
         14: "Most Steps in a Month",
-        15: "Longest Goal Streak"
     }
     return typeId_name_map.get(typeId, "Unnamed Activity")
 
